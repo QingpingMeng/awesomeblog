@@ -1,0 +1,6 @@
+[submodule "serverless-demo-client"]
+	path = serverless-demo-client
+	url = https://github.com/QingpingMeng/serverless-demo-client.git
+[submodule "my-awesome-blog-server"]
+	path = my-awesome-blog-server
+	url = https://github.com/QingpingMeng/my-awesome-blog-server.git
