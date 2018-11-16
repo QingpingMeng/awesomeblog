@@ -1,3 +1,6 @@
 [submodule "my-awesome-blog-server"]
 	path = my-awesome-blog-server
 	url = https://github.com/QingpingMeng/my-awesome-blog-server.git
+[submodule "my-awesome-blog-client"]
+	path = my-awesome-blog-client
+	url = https://github.com/QingpingMeng/my-awesome-blog-client.git
