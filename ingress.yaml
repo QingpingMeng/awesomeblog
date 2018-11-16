@@ -1,0 +1,35 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: cafe
+  labels:
+    last_updated: "1538105935041"
+  annotations:
+    kubernetes.io/ingress.class: nginx
+    certmanager.k8s.io/cluster-issuer: letsencrypt-prod
+spec:
+  tls:
+  - hosts:
+    - medium.qingping.me
+    - qingping.me
+    - api.qingping.me
+    secretName: letsencrypt-prod # Name of the secret
+  rules:
+  - host: qingping.me
+    http:
+      paths:
+      - backend:
+          serviceName: blog-client
+          servicePort: 80
+  - host: api.qingping.me
+    http:
+      paths:
+      - backend:
+          serviceName: blog-server
+          servicePort: 80
+  - host: medium.qingping.me
+    http:
+      paths:
+      - backend:
+          serviceName: medium-clone
+          servicePort: 80
