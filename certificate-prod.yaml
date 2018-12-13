@@ -5,9 +5,9 @@ metadata:
 spec:
   secretName: letsencrypt-prod
   dnsNames:
-  - medium.qingping.me
   - qingping.me
-  - api.medium.me
+  - api.qingping.me
+  - medium.qingping.me
   acme:
     config:
     - http01:

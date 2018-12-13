@@ -6,13 +6,13 @@ metadata:
     last_updated: "1538105935041"
   annotations:
     kubernetes.io/ingress.class: nginx
-    certmanager.k8s.io/cluster-issuer: letsencrypt-prod
+    certmanager.k8s.io/cluster-issuer: prod-cert
 spec:
   tls:
   - hosts:
-    - medium.qingping.me
     - qingping.me
     - api.qingping.me
+    - medium.qingping.me
     secretName: letsencrypt-prod # Name of the secret
   rules:
   - host: qingping.me
